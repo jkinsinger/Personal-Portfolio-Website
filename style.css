@@ -1,5 +1,37 @@
-@media (max-width: 576px) {
-    body {
-        background-color: lightblue;
+@media (min-width: 992px) {
+    header, footer {
+        background-color: #fa079d;
+        padding: 30px;
+        margin: 0;
+        font-size: 15px;
     }
 }
+
+@media (min-width: 576px) { 
+    header, footer {
+        background-color: #fa079d;
+        padding: 30px;
+        margin: 0;
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    header, footer {
+        background-color: #fa079d;
+        padding: 30px;
+        margin: 0;
+        font-size: 15px;
+    }
+ }
+
+
+@media (min-width: 1200px) {
+    header, footer {
+        background-color: #fa079d;
+        padding: 30px;
+        margin: 0;
+        font-size: 15px;
+    }
+ }
