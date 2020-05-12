@@ -6,9 +6,9 @@
     header, footer  {
         /* background-color: #6D0135; */
         background-color: black;
-        padding: 30px;
+        padding: 50px;
         margin: 0;
-        font-size: 15px;
+        /* font-size: 500px; */
     }
 
     .container {
@@ -52,6 +52,25 @@
         font-size: 20px;
         text-align: justify
     }
+
+    .dot {
+        height: 70px;
+        width: 70px;
+        padding: 25px;
+        margin: 30px;
+        background-color: black;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        color: white;
+      }
+
+      a {
+          text-decoration: none;
+          text-align: center;
+          color: whitesmoke;
+          font: 15px;
+      }
 }
 
 /* @media (min-width: 576px) { 
