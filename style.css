@@ -53,25 +53,25 @@
         text-align: justify
     }
 
-    .dot {
-        height: 70px;
-        width: 70px;
-        padding: 25px;
-        margin: 30px;
-        background-color: black;
-        border-radius: 50%;
-        display: inline-block;
-        text-align: center;
-        color: white;
-      }
+    .circle {
+        border-radius: 1000%;        
+        background: black;
+        display:inline-block;
+        line-height: 100px;
+        height: 100px;
+        width: 100px;
 
-      a {
+    }
+    .menuOptions > a {
+         margin: 30px;
+         padding: 20px;
           text-decoration: none;
           text-align: center;
           color: whitesmoke;
           font: 15px;
       }
 }
+
 
 /* @media (min-width: 576px) { 
     header, footer {
