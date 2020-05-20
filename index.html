@@ -47,17 +47,56 @@
         <br/><br/><br/><br/><br/>
         <br/><br/><br/><br/><br/>
         <br/><br/><br/><br/><br/>
-        <br/><br/><br/><br/><br/>
-        <br/><br/><br/><br/><br/>
+
 
         <div class="container">
             <div id="aboutPage" >
-                <h2>About</h2>
+                <h1>About</h1>
                 <a href="#homePage">
                     <h5 class="backToTop">Back to top</h5>
                 </a>
+                <p>A Collapsible:</p>
+                    <button class="collapsible">Open Collapsible</button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                <div class="aboutTitles"></div>
+                    <button class="collapsible">Intro</button>
+                    <div class="content">
+                        <p>Lorem ipsum...</p>
+                      </div>
+                    <br/><br/><br/>
+                    <button class="collapsible">Youth Years</button>
+                    <div class="content">
+                        <p>Lorem ipsum...</p>
+                      </div>
+                    <br/><br/><br/>
+                    <button class="collapsible">Teenage Years</button>
+                    <div class="content">
+                        <p>Lorem ipsum...</p>
+                      </div>
+                    <br/><br/><br/>
+                    <button class="collapsible">Current</button>
+                    <div class="content">
+                        <p>Lorem ipsum...</p>
+                      </div>
+                    <br/><br/><br/>
+                    <button class="collapsible">Goals and Dreams</button>
+                    <div class="content">
+                        <p>Lorem ipsum...</p>
+                      </div>
             </div>
         </div>
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>        
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>        
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
         <br/><br/><br/><br/><br/>
         <br/><br/><br/><br/><br/>
         <br/><br/><br/><br/><br/>
@@ -126,6 +165,26 @@
         <br/><br/><br/><br/><br/>
         </div>
     <footer></footer>
+
+
+
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
     </body>
 </html>
 

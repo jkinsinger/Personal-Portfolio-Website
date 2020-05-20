@@ -70,6 +70,75 @@
           color: whitesmoke;
           font: 15px;
       }
+
+      #aboutPage > h1 {
+          font-size: 70px;
+          text-align: center;
+          padding-left: 700px;
+      }
+
+      #aboutPage > a > h5 {
+          text-align: center;
+          padding-left: 700px;
+      }
+      .aboutTitles  {
+          text-align: center;
+          padding-left: 700px;
+          font-size: 30px
+      }
+
+      /* .collapsible {
+        color: black;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 15px;
+        padding: 0;
+        border: black;
+        background: none;
+      } */
+
+
+      .collapsible {
+        /* background-color: black; */
+        color: black;
+        cursor: pointer;
+        /* padding: 18px; */
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 15px;
+      }
+      
+
+      /* .active, .collapsible:hover {
+        background-color: #ccc;
+      } */
+
+      .content {
+        /* padding: 0 18px; */
+        display: none;
+        overflow: hidden;
+        /* background-color: #f1f1f1; */
+        transition: 0.2s ease-out;
+      }
+      
+      .collapsible:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: white;
+        float: right;
+        margin-left: 5px;
+      }
+      
+      .active:after {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+      }
+     
 }
 
 
